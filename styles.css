@@ -1,0 +1,156 @@
+/* General Styles for All Pages */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #0D3355;
+    font-weight: 200
+}
+
+header {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #0D3355;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    margin: 20;
+    font-weight: 500;
+    display: flex;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/* webpage header style*/
+
+.logo-link {
+    display: inline-block;
+    margin-right: 10px; /* Space between logo and header text */
+    margin-top: 10px
+}
+
+.logo {
+    max-height: 40px; 
+    width: auto; 
+}
+
+header h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px; /* Adjust font size if needed */
+}
+
+header h2 {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 80
+}
+
+/* General Styles for the Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FEC02A;
+    padding: 10px;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-nav li, .right-nav li {
+    margin: 0 10px;
+}
+
+.left-nav a, .right-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Buttons for LinkedIn and Email */
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px 5px;
+    background-color: #0D3355;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Specific Styling for LinkedIn and Email Buttons */
+.btn-linkedin {
+    background-color: #0D3355; /* LinkedIn blue */
+}
+
+.btn-email {
+    background-color: #0D3355; /* Email red */
+}
+
+/* Search Field */
+input[type="text"] {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-search {
+    padding: 5px 10px;
+    background-color: #0D3355;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btn-projects {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 10px;
+    background-color: #0D3355;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links styled as buttons */
+    display: inline-block; /* Make the button fit the text size */
+    margin: 10px 0; /* Space around the button */
+    font-size: 15px;
+}
+
+/*global characteristics*/
+html, body {
+    height: 100%; /* Make sure the body and html take full height */
+    margin: 0;    /* Remove default margin */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the wrapper at least the height of the viewport */
+}
+
+.content {
+    flex: 1; /* This will make the content area take up available space */
+}
+
+footer {
+    background-color: #021E36; /* Set footer color */
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding: 20px;
+}
