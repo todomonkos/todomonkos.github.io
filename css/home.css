@@ -1,0 +1,133 @@
+/* General Styles for All Pages */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #021E36;
+    color: #021E36;
+    font-weight: 200
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: left;
+    padding: 5px;
+    background-color: #021E36;
+    color: #fff;
+    font-weight: 100
+}
+
+
+
+
+/* webpage header style*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align items to the bottom */
+    background-color: #021E36;
+    padding: 20px 10px;
+    height: 80px; /* Adjust height as needed */
+}
+
+header h1{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color:#fff
+}
+
+.logo-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 25px; /* Space between logo and header text */
+    align-items: center
+}
+
+.logo {
+    max-height: 50px; 
+    width: auto; 
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav a:hover {
+    color: #34FEC8; /* Change color on hover */
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 10px;
+    background-color: #34FEC8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links styled as buttons */
+    display: inline-block; /* Make the button fit the text size */
+    margin: 10px 0; /* Space around the button */
+    font-size: 15px;
+}
+
+.btn a:hover {
+    color: #fff
+}
+
+.btn a:visited {
+    color: #fff
+}
+
+/*global characteristics*/
+html, body {
+    height: 100%; /* Make sure the body and html take full height */
+    margin: 0;    /* Remove default margin */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the wrapper at least the height of the viewport */
+}
+
+.content {
+    flex: 1; /* This will make the content area take up available space */
+}
+
+footer {
+    background-color: #021E36; /* Set footer color */
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 25px;
+}
