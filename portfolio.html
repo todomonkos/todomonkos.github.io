@@ -3,50 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Domonkos</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <a href="home.html" class="logo-link">
-            <img src="img/logo.png" alt="Domonkos' Logo" class="logo">
-        </a>
-        <h1>My Portfolio</h1>
+    <header class="header">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+              <img src="img/logo.png" alt="Domonkos' Logo" class="logo">
+            </a>
+            <h1>about me</h1>  
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutMe.html">About me</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactMe.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul class="left-nav">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutMe.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contactMe.html">Contact Me</a></li>
-        </ul>
-        <ul class="right-nav">
-             <!-- Search Field -->
-             <li>
-                <input type="text" placeholder="Search...">
-                <button class="btn-search">Search</button>
-            </li>
-
-            <!-- LinkedIn Button -->
-            <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank">
-                <button class="btn-linkedin">LinkedIn</button>
-            </a></li>
-            
-            <!-- Email Button -->
-            <li><a href="mailto:your-email@example.com">
-                <button class="btn-email">Email</button>
-            </a></li>
-        </ul>
-    </nav>
 
     <section>
         <h2>Programming</h2>
         <p>Check out the projects I’ve worked on, both personal and professional.</p>
         <a href="Projects/programingProjects.html">
-            <button class="btn-projects">View Projects</button>
+            <button class="btn">View Projects</button>
         </a>
     </section>
 

@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #051c31;
+    color: #FFFFFF;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;  /* Align logo + title left, nav right */
+    align-items: end;  /* Vertically center everything */
+    background-color: #051c30;  /* Dark background color like in your image */
+    padding: 20px 40px;  /* Adjust padding as needed */
+}
+
+/* Logo and title on the left */
+.header-left {
+    display: flex;
+    align-items: end;
+}
+
+/* Logo styling */
+.logo {
+    max-height: 50px;  /* Adjust height to fit your design */
+    margin-right: 10px;  /* Space between the logo and title */
+}
+
+/* Title styling */
+.header-left h1 {
+    font-family: 'Josefin Sans', sans-serif;  /* Use your preferred font */
+    color: #FFFFFF;  /* White text color */
+    font-size: 24px;  /* Adjust size as needed */
+}
+
+/* Navigation styling */
+.header-nav {
+    display: flex;
+}
+
+.nav-list {
+    list-style-type: none;  /* Remove bullets from list */
+    display: flex;
+    gap: 20px;  /* Space between the links */
+}
+
+/* Navigation link styles */
+.nav-list li a {
+    font-family: 'Josefin Sans', sans-serif;  /* Use your preferred font */
+    text-decoration: none;  /* Remove underline */
+    color: #FFFFFF;  /* White text */
+    font-size: 18px;  /* Adjust size as needed */
+    position: relative;  /* For the underline effect on hover */
+    padding-bottom: 5px;  /* Space for underline */
+}
+
+.nav-list li a:hover {
+    color: #00ffcc;  /* Hover color (you can adjust) */
+}
+
+/* Underline effect */
+.nav-list li a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #00ffcc;  /* Underline color */
+    left: 0;
+    bottom: 0;
+}
+
+/* Highlight the current page link */
+.nav-list li a.active {
+    color: #00ffcc;  /* Active page color */
+    border-bottom: 2px solid #00ffcc;  /* Underline effect on active page */
+}
+
+/* Intro section */
+.intro {
+    margin-top: 100px;
+    text-align: left;
+    padding-left: 122px;
+    position: relative;
+}
+
+.hi {
+    font-size: 400px;
+    color: #34fec8;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro-text {
+    margin-top: 300px;
+    font-size: 38px;
+    font-weight: 300;
+    max-width: 900px;
+}
+
+.intro-text .highlight {
+    font-weight: 600;
+    color: #34fec8;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 50px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 35.5px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #212121;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.learn-more {
+    background-color: #fff;
+}
+
+.get-in-touch {
+    background-color: #34ffc8;
+}
+
+/* Large name at the bottom */
+.large-name {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    opacity: 0.05;
+}
+
+.large-name h1 {
+    font-size: 280px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
