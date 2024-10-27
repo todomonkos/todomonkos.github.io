@@ -18,55 +18,44 @@
         </div>
         <nav class="header-nav">
             <ul class="nav-list">
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="aboutMe.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="home.html" class="active">home</a></li>
+                <li><a href="aboutMe.html">about me</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="intro">
-            <h1 class="hi">hi</h1>
-            <p class="intro-text">
-                i am a student pursuing a bsc in politics, psychology, law, and economics. i’m fascinated by the intersection of 
-                <span class="highlight">technology & law</span>, exploring both the 
-                <span class="highlight">technical & legal challenges of ai</span>, as well as the ethical questions 
-                <span class="highlight">shaping our future.</span>
-            </p>
-            
+            <div class="intro-block">
+                <h1 class="hi">hi</h1>
+                <p class="intro-text">
+                    my name is Domonkos B. Toth. </br>
+                    i am a student pursuing a bsc in politics, psychology, law, and economics. i’m fascinated by the intersection of 
+                    <span class="highlight">technology</span> &  <span class="highlight">law</span>, exploring both the 
+                    <span class="highlight">technical</span> & <span class="highlight">legal challenges</span> of <span class="highlight-blue">ai</span>, as well as the ethical questions 
+                    <span class="highlight">shaping our future.</span>
+                </p>
+            </div>
             <!-- Buttons -->
             <div class="buttons">
-                <a href="#" class="btn learn-more">learn more about me</a>
-                <a href="#" class="btn get-in-touch">get in touch with me</a>
+                <a href="aboutMe.html" class="btn learn-more">learn more about me</a>
+                <a href="contactMe.html" class="btn get-in-touch">get in touch with me</a>
             </div>
         </div>
-        
-        <!-- Large Name at the Bottom -->
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" width="100%" height="100%">
-                <defs>
-                  <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 352 340">
-                    <image width="352" height="340" xlink:href="data:image/png;base64,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
-                  </pattern>
-                  <filter id="Area_DISPLAY_ELEMENTS:Label_SIZE:MEDIUM_STATE:DEFAULT_STYLE:STYLE1_" x="442" y="622" width="328" height="119" filterUnits="userSpaceOnUse">
-                    <feOffset dy="8" input="SourceAlpha"/>
-                    <feGaussianBlur stdDeviation="8" result="blur"/>
-                    <feFlood flood-color="#34ffc8" flood-opacity="0.102"/>
-                    <feComposite operator="in" in2="blur"/>
-                    <feComposite in="SourceGraphic"/>
-                  </filter>
-                  <clipPath id="clip-Web_1920_1">
-                    <rect width="1920" height="1080"/>
-                  </clipPath>
-                </defs>
-                <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
-                  <rect width="1920" height="1080" fill="#051c31"/>
-                  <text id="Domonkos_Toth" data-name="Domonkos Toth" transform="translate(960 1117)" fill="#fff" stroke="#fff" stroke-width="1" font-size="280" font-family="JosefinSans-SemiBold, Josefin Sans" font-weight="600"><tspan x="-988.26" y="0">Domonkos Toth</tspan></text>
-                </g>
-              </svg>        
-        </div>
     </main>
+
+    <footer>    
+        <div class="large-name">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" width="100%" height="100%">
+                <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+                  <text id="Domonkos_Toth" data-name="Domonkos Toth" transform="translate(960 1117)" fill="#fff" stroke="#fff" stroke-width="1" font-size="280" font-family="JosefinSans-SemiBold, Josefin Sans" font-weight="600"><tspan x="-988.26" y="5">Domonkos Toth</tspan></text>
+                </g>
+            </svg> 
+        </div>
+    </footer>
+
 </body>
 </html>
