@@ -157,7 +157,7 @@ body {
 }
 
 
-/* Large name at the bottom */
+/* Large name at the bottom of home page*/
 .large-name {
     position: absolute;
     bottom: 0;
@@ -166,3 +166,93 @@ body {
     pointer-events: none;
 }
 
+section {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding: 40px;
+    color: #051c30;
+    background-color: #fff;
+    border-radius: 20px 0 0 20px; /* Rounded only on the left */
+    position: relative;
+}
+
+.first-section-on-page {
+    margin-top: 30px;
+}
+
+.footer-normal{
+    position: absolute;
+    bottom: 0;
+    margin: 25px;
+}
+
+.footer-slide {
+    bottom: 0;
+    margin: 25px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 15px; /* Spacing between buttons */
+    margin-top: 5px;
+  }
+
+.btn-normal {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #051c30;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+  }
+  
+.btn-normal:hover {
+    background-color: #34fec8;
+}
+
+  /* Ensure it fits large screens */
+@media (min-width: 1200px) {
+    .section {
+    width: 75%;
+    }
+}
+
+.section-part {
+    margin-right: 100px;
+}
+
+section h1{
+    margin-bottom: 10px;
+}
+
+section p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.2;
+    padding-bottom: 5px;
+}
+
+section h2 {
+    margin-bottom: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+
+}
+
+.grid-section-1 {
+    border-radius: 20px;
+}
+
+.grid-text-format-2 {
+    margin-right:100px;
+}
