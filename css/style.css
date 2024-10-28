@@ -16,67 +16,69 @@ body {
     display: flex;
     justify-content: space-between;  
     align-items: end; 
-    background-color: #051c30;
-    height: 100px;
+    height: 75px;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     position: fixed;
+    top: 0px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.28);
 }
 
-.header-left,
-.header-nav {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.nav-bar-container{
+    padding: 25px;
 }
 
 /* Logo and title on the left */
 .header-left {
     display: flex;
-    align-items: end;
+    align-items: center;
+    margin-left: 15px;
+    z-index: 2;
 }
 
 /* Logo styling */
 .logo {
-    max-height: 50px;  /* Adjust height to fit your design */
+    max-height: 35px;  
+    z-index: 1;
     margin-right: 10px;
-    margin-left: 15px;
 }
 
 /* Title styling */
 .header-left h1 {
-    font-family: 'Josefin Sans', sans-serif;  /* Use your preferred font */
-    color: #FFFFFF;  /* White text color */
-    font-size: 24px;  /* Adjust size as needed */
+    font-family: 'Josefin Sans', sans-serif; 
+    color: #FFFFFF; 
+    font-size: 24px;
+    z-index: 1;
 }
 
 /* Navigation styling */
 .header-nav {
     display: flex;
-    margin-right: 20px;
+    padding: 25px;
+    z-index: 2;
 }
 
 .nav-list {
     list-style-type: none;  /* Remove bullets from list */
     display: flex;
-    gap: 20px;  /* Space between the links */
+    gap: 20px;
+    z-index: 1;
 }
 
-/* Navigation link styles */
 .nav-list li a {
-    font-family: 'Josefin Sans', sans-serif;  /* Use your preferred font */
-    text-decoration: none;  /* Remove underline */
-    color: #FFFFFF;  /* White text */
-    font-size: 20px;  /* Adjust size as needed */
-    position: relative;  /* For the underline effect on hover */
-    padding-bottom: 5px;  /* Space for underline */
+    text-decoration: none;  
+    color: #FFFFFF;  
+    font-size: 20px;  
+    position: relative;  
+    padding-bottom: 5px;  
     font-weight: 100;
 }
 
 .nav-list li a:hover {
-    color: #00ffcc;  /* Hover color (you can adjust) */
+    color: #00ffcc;
+    font-weight: 400;  
 }
 
-/* Underline effect */
 .nav-list li a:hover::after {
     content: '';
     position: absolute;
@@ -87,12 +89,14 @@ body {
     bottom: 0;
 }
 
-/* Highlight the current page link */
 .nav-list li a.active {
-    color: #00ffcc;  /* Active page color */
+    color: #00ffcc;  
     border-bottom: 2px solid #00ffcc; 
-    font-weight: 400; /* Underline effect on active page */
+    font-weight: 400; 
 }
+
+/* End of navigation */
+/* End of header */
 
 /* Intro section */
 .intro {
@@ -133,6 +137,23 @@ body {
 }
 
 /* Buttons */
+.btn-normal {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #051c30;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+  }
+  
+.btn-normal:hover {
+    background-color: #34fec8;
+}
+
 .buttons {
     margin-left: 15px;
     z-index: 2;
@@ -156,7 +177,7 @@ body {
 .get-in-touch {
     background-color: #34ffc8;
 }
-
+/* End of buttons */ 
 
 /* Large name at the bottom of home page*/
 .large-name {
@@ -165,6 +186,12 @@ body {
     width: 100%;
     z-index: 1;
     pointer-events: none;
+}
+
+main {
+    position: relative;
+    top: 100px;
+    z-index: 4;
 }
 
 section {
@@ -190,8 +217,9 @@ section {
 }
 
 .footer-slide {
-    bottom: 0;
     margin: 25px;
+    position: absolute;
+    display: block;
 }
 
 .btn-container {
@@ -200,21 +228,7 @@ section {
     margin-top: 5px;
   }
 
-.btn-normal {
-    font-family: 'Josefin Sans', sans-serif;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #051c30;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: background-color 0.5s ease;
-  }
-  
-.btn-normal:hover {
-    background-color: #34fec8;
-}
+
 
   /* Ensure it fits large screens */
 @media (min-width: 1200px) {
